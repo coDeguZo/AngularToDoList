@@ -1,0 +1,7 @@
+<!-- ngSubmit does the preventDefault() for us!! -->
+<form class="form" (ngSubmit)="onSubmit()">
+  <!-- Had to import FormsModule in app.modules -->
+  <input type="text" name="title" [(ngModel)]="title" 
+  placeholder="Add todo...">
+  <input type="submit" value="Submit" class="btn">
+</form>

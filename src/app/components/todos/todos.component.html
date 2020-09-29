@@ -1,5 +1,8 @@
-<h1 style="text-align: center;"> Todos </h1>
-
-<app-todoitem *ngFor="let todo of todos" [todo] = "todo">
+<!-- <h1 style="text-align: center;"> Todos </h1> -->
+<app-add-todos (addTodo)="addTodo($event)"></app-add-todos>
+<app-todoitem 
+  *ngFor="let todo of todos" 
+  [todo] = "todo"
+  (deleteTodo)="deleteTodo($event)">
   <li>{{ todo.title }}</li>
 </app-todoitem>
