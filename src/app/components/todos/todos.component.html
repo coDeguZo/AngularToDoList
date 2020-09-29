@@ -1,0 +1,5 @@
+<h1 style="text-align: center;"> Todos </h1>
+
+<app-todoitem *ngFor="let todo of todos" [todo] = "todo">
+  <li>{{ todo.title }}</li>
+</app-todoitem>
